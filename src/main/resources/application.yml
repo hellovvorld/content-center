@@ -23,4 +23,4 @@ spring:
         dashboard: localhost:8080
   application:
     # 服务名称尽量用-，不要用_，不要用特殊字符
-    name: content-center
+    name: content-centerClassName: com.netflix.loadbalancer.RandomRule

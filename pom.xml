@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <!--语义化的版本控制-->
-        <!--2：主版本，第几代-->
-        <!--1：次版本，一些功能的增加，但是架构没有太大的变化，是兼容的-->
-        <!--5：增量版本，bug修复-->
-        <!--release：里程碑，SNAPSHOT：开发版 M：里程碑 RELEASE：正式版-->
         <version>2.1.5.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
     <groupId>com.itmuch</groupId>
     <artifactId>content-center</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -55,30 +50,30 @@
         <!--spring-cloud-starter-{spring cloud子项目的名称}-[{模块名称}]-->
         <!--feign spring-cloud-starter-openfeign-->
         <!--sentinel spring-cloud-starter-alibaba-sentinel-->
-        <!--<dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>-->
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
         <dependencies>
             <!--整合spring cloud-->
-            <!--<dependency>
+            <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
                 <version>Greenwich.SR1</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>-->
+            </dependency>
             <!--整合spring cloud alibaba-->
-            <!--<dependency>
+            <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>0.9.0.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>-->
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
